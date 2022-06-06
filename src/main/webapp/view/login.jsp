@@ -18,6 +18,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			
 	</head>		  
 	<body>
-		<h1>登录成功</h1>
+		<form action="user/login" method="post">
+			<input name="userName">
+			<input name="userPass" >
+			<input type="submit" value="登录">
+		</form>
+	${msg }	    
 	</body>
 </html>

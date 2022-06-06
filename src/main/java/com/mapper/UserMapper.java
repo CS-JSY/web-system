@@ -1,7 +1,14 @@
 package com.mapper;
+import com.entity.User;
 
-import com.beans.UserInfo;
-
+/**
+ * 用户相关
+ */
 public interface UserMapper {
-	public UserInfo login(String userName, String password);
+	/**
+	 * 根据用户名或邮箱名登录
+	 * @param s 用户名或邮箱
+	 * @return 用户信息
+	 */
+	User loginByNameOrEmail(String s);
 }
