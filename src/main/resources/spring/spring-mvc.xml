@@ -12,7 +12,7 @@
 
 	<!-- 开启注解驱动 -->
 	<mvc:annotation-driven />
-
+	<mvc:resources location="/resources/" mapping="/resources/**"  />
 	<!-- 配置视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/view/" />
